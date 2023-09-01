@@ -151,7 +151,7 @@ NUM_ITERS = 3_500
 
 class NNClassifier(nn.Module):
     def __init__(self, input_size):
-        super(LinearClassifier, self).__init__()
+        super(NNClassifier, self).__init__()
         self.fc = nn.Sequential(
             nn.Linear(input_size, 256),
             nn.ReLU(),
